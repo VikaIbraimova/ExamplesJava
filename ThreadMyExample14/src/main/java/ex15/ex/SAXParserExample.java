@@ -14,6 +14,7 @@ import org.jdom.output.XMLOutputter;
 /**
  * Изменение XML файла с помощью JDOM XML:
  * тот же пример, только уже для моего приложения-примера:Организация многопольщовательской работы с Excel-файлом
+ * Источник примера: http://j4web.ru/java-xml/izmenenie-xml-fajla-s-pomoshhyu-jdom-xml.html
  */
 public class SAXParserExample {
 

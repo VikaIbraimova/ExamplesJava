@@ -21,6 +21,7 @@ import java.io.IOException;
 
 /**
  * Created by vika on 14.11.16.
+ * Источник примера: http://j4web.ru/java-xml/izmenenie-xml-fajla-s-pomoshhyu-jdom-xml.html
  */
 public class DOMParserExample {
 

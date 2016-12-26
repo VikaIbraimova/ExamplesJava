@@ -1,0 +1,27 @@
+----Создание таблицы в БД PostgreSQL
+
+CREATE TABLE BOOKS2
+(
+  ID serial NOT NULL,
+  BOOK_TITLE character varying(255) NOT NULL,
+  BOOK_AUTHOR character varying(255) NOT NULL,
+  BOOK_PRICE int NOT NULL,
+  PRIMARY KEY (ID)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE BOOKS2
+  OWNER TO postgres;
+
+-----Заполнение таблицы тестовыми данными
+
+INSERT INTO BOOKS2 (BOOK_TITLE, BOOK_AUTHOR, BOOK_PRICE)
+    VALUES ('Java', 'Vika', 3000);
+
+INSERT INTO BOOKS2 (BOOK_TITLE, BOOK_AUTHOR, BOOK_PRICE)
+    VALUES ('C++', 'Kot', 6000);
+
+---Просмотр содержимого таблицы-----
+
+select * from BOOKS2
